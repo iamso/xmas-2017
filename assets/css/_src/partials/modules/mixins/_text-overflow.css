@@ -1,0 +1,12 @@
+/**
+ * text overflow
+ * @apply --text-overflow
+ */
+
+:root {
+  --text-overflow: {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  };
+}

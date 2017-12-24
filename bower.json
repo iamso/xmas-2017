@@ -1,0 +1,29 @@
+{
+  "name": "xmas-2017",
+  "version": "0.1.0",
+  "authors": [
+    "Steve Ottoz <so@dev.so>"
+  ],
+  "description": "Simple online xmas card.",
+  "license": "MIT",
+  "homepage": "https://xmas.dev.so",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "autocreate.js": "0.*",
+    "Tetragon.js": "0.*",
+    "tooltips.scss": "0.*",
+    "u.circularrr.js": "0.*",
+    "u.formlabel.js": "0.*",
+    "u.log.js": "0.*",
+    "u.optiscroll.js": "0.*",
+    "u.strength.js": "0.*",
+    "u.tmpl.js": "0.*",
+    "u.vibrate.js": "0.*"
+  }
+}

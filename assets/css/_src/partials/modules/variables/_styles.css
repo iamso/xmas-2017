@@ -1,0 +1,10 @@
+
+:root {
+  --body-bg: #F9F9F9;
+  --text-color: #333;
+
+  --link-color: #0447DA;
+  --link-decoration: underline;
+  --link-hover-color: #033CA3;
+  --link-hover-decoration: none;
+}

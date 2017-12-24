@@ -1,0 +1,114 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.hide {
+  display: none;
+}
+
+.done {
+  body {
+    background: #000;
+    transition: 1s ease-out;
+  }
+  .letter {
+    transition: 1s ease-out;
+    &.done.black {
+      color: #ddd;
+    }
+  }
+}
+
+.letter-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.4s ease-out;
+  width: 100vmin;
+  height: 100vmin;
+
+  .loaded & {
+    opacity: 1;
+  }
+
+}
+.letter {
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 6.5vmin;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 20%;
+  height: 20%;
+
+  &.scrambling {
+    color: #666;
+  }
+
+  &.done {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-name: tada;
+    color: #f00;
+    &.black {
+      color: #000;
+    }
+  }
+}
+
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  20%, 40% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    transform: scale3d(1.2, 1.2, 1.2) rotate3d(0, 0, 1, 3deg);
+  }
+
+  80% {
+    transform: scale3d(1.2, 1.2, 1.2) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.start-button {
+  appearance: none;
+  background: rgba(249, 249, 249, 0.7);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
+  color: #000;
+  font-family: inherit;
+  font-size: 6.5vmin;
+  font-weight: 600;
+  outline: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.4s ease-out;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+}

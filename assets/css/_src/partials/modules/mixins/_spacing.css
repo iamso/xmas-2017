@@ -1,0 +1,8 @@
+/**
+ * Spacing mixins for additional top/bottom paddings
+ * @mixin spacing top, 2rem;
+ */
+
+@define-mixin spacing $side, $height {
+  padding-$(side): $height;
+}

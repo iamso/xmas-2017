@@ -1,0 +1,4 @@
+
+:root {
+  --link-transition: 0.3s var(--easeInOutQuad);
+}

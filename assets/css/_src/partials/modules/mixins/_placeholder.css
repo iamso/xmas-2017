@@ -1,0 +1,17 @@
+/**
+ * Placeholder text
+ * @mixin placeholder
+ */
+
+@define-mixin placeholder $color: #999 {
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+}

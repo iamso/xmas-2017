@@ -1,0 +1,15 @@
+/**
+ * Size mixins
+ * @mixin size;
+ * @mixin view-padding;
+ */
+
+@define-mixin size $width, $height: $width {
+  width: $width;
+  height: $height;
+}
+
+@define-mixin view-padding $width: 780px {
+  padding-left: calc(50% - ($width / 2));
+  padding-right: calc(50% - ($width / 2));
+}

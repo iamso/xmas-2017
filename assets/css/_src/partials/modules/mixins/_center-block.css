@@ -1,0 +1,12 @@
+/**
+ * Center-align a block level element
+ * @apply --center-block;
+ */
+
+:root {
+  --center-block: {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  };
+}
